@@ -226,9 +226,6 @@ public class TedAdmobDialog extends AlertDialog {
         bannerContainer.addView(admobBannerView);
         bannerContainer.setVisibility(View.VISIBLE);
         progressView.setVisibility(View.GONE);
-        if (builder.onBackPressListener != null) {
-            builder.onBackPressListener.onAdShow();
-        }
     }
 
     private void bindNativeView(NativeContentAd nativeAd, NativeContentAdView adView) {
